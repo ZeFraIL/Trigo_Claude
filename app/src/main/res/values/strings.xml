@@ -1,0 +1,263 @@
+<resources>
+    <string name="app_name">Trigo_Claude</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Login & Registration -->
+    <string name="login_title">Login</string>
+    <string name="login_button">Login</string>
+    <string name="no_account_register">No account? Register</string>
+    <string name="registration_title">Registration</string>
+    <string name="register_button">Register</string>
+    <string name="already_have_account_login">Already have an account? Login</string>
+    <string name="error_invalid_credentials">Invalid username or password</string>
+    <string name="error_password_too_short">Password must be at least 4 characters long</string>
+    <string name="registration_successful">Registration successful!</string>
+    <string name="error_enter_username">Enter username</string>
+    <string name="error_enter_password">Enter password</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+
+    <!-- Main Navigation -->
+    <string name="navigation_title">Trigonometry</string>
+    <string name="button_theory">Theory</string>
+    <string name="button_practice">Practice</string>
+    <string name="button_quiz">Quiz</string>
+    <string name="button_progress">Progress</string>
+    <string name="button_settings">Settings</string>
+
+    <!-- Theory Fragment -->
+    <string-array name="theory_topics">
+        <item>Basic Concepts of Trigonometry</item>
+        <item>The Unit Circle</item>
+        <item>Sine Function (sin)</item>
+        <item>Cosine Function (cos)</item>
+        <item>Tangent Function (tan)</item>
+        <item>Cotangent Function (cot)</item>
+        <item>Inverse Trigonometric Functions</item>
+        <item>Trigonometric Identities</item>
+    </string-array>
+
+    <string-array name="theory_topic_descriptions">
+        <item>Trigonometry studies the relationships between the sides and angles of triangles. The main functions are sine, cosine, and tangent.</item>
+        <item>The unit circle is a circle with a radius of 1 centered at the origin. It allows for the visualization of trigonometric functions.</item>
+        <item>The sine of an angle α is the y-coordinate of a point on the unit circle. sin(α) = y-coordinate of the point.</item>
+        <item>The cosine of an angle α is the x-coordinate of a point on the unit circle. cos(α) = x-coordinate of the point.</item>
+        <item>The tangent of an angle α is the ratio of the sine to the cosine. tan(α) = sin(α)/cos(α).</item>
+        <item>The cotangent of an angle α is the ratio of the cosine to the sine. cot(α) = cos(α)/sin(α) = 1/tan(α).</item>
+        <item>Inverse functions: arcsin, arccos, arctan allow you to find the angle from the value of a trigonometric function.</item>
+        <item>Basic identities: sin²α + cos²α = 1, tan α = sin α / cos α, and other important relationships.</item>
+    </string-array>
+
+    <string name="angle_format">Angle: %d°</string>
+    <string name="sin_format">sin: %.3f</string>
+    <string name="cos_format">cos: %.3f</string>
+    <string name="tan_format">tan: %.3f</string>
+    <string name="tan_infinity">tan: ∞</string>
+    <string name="theory_fragment_title">Trigonometry Theory</string>
+    <string name="select_topic_label">Select a topic:</string>
+    <string name="topic_description_placeholder">Select a topic to study the theory</string>
+    <string name="interactive_unit_circle_title">Interactive Unit Circle</string>
+    <string name="change_angle_label">Change the angle:</string>
+    <string name="highlight_function_label">Highlight function:</string>
+
+    <!-- Practice Fragment -->
+    <string-array name="practice_exercise_types">
+        <item>Calculating Values</item>
+        <item>Solving Equations</item>
+        <item>Graphing</item>
+        <item>Applying Identities</item>
+    </string-array>
+
+    <string name="question_calculate_value">Calculate %1$s(%2$d°)</string>
+    <string name="hint_use_unit_circle">Use the unit circle for an angle of %d°</string>
+
+    <string-array name="practice_equation_questions">
+        <item>sin(x) = 0.5, find x in the range [0°, 360°]</item>
+        <item>cos(x) = -0.5, find x in the range [0°, 360°]</item>
+        <item>tan(x) = 1, find x in the range [0°, 180°]</item>
+        <item>sin(x) = √3/2, find x in the range [0°, 360°]</item>
+    </string-array>
+
+    <string name="hint_use_inverse_functions">Use inverse trigonometric functions</string>
+
+    <string name="question_determine_period">Determine the period of the function %s</string>
+    <string name="hint_period_definition">The period is the interval after which the function repeats</string>
+
+    <string-array name="practice_identity_questions">
+        <item>If sin²(x) = 0.36, what is cos²(x)?</item>
+        <item>If tan(x) = 3/4, what is cot(x)?</item>
+        <item>Simplify: sin(x)/cos(x)</item>
+    </string-array>
+
+    <string-array name="practice_identity_hints">
+        <item>Use the main trigonometric identity</item>
+        <item>cot(x) = 1/tan(x)</item>
+        <item>This is the definition of tangent</item>
+    </string-array>
+
+    <string name="enter_answer_toast">Enter an answer</string>
+    <string name="correct_answer_toast">Correct! ✓</string>
+    <string name="incorrect_answer_toast">Incorrect. Correct answer: %.3f</string>
+    <string name="enter_numeric_value_toast">Enter a numeric value</string>
+    <string name="score_format">Score: %d/%d (%d%%)</string>
+    <string name="initial_score">Score: 0/0</string>
+    <string name="practice_fragment_title">Practice Exercises</string>
+    <string name="select_exercise_type_label">Select an exercise type:</string>
+    <string name="question_placeholder">Click on an exercise type or the Next button</string>
+    <string name="answer_hint">Enter your answer</string>
+    <string name="submit_button_text">Submit</string>
+    <string name="hint_button_text">Hint</string>
+    <string name="next_button_text">Next</string>
+
+    <!-- Quiz Fragment -->
+    <string-array name="quiz_difficulties">
+        <item>Easy</item>
+        <item>Medium</item>
+        <item>Hard</item>
+    </string-array>
+
+    <string name="time_format">Time: %02d</string>
+    <string name="time_up_toast">Times up!</string>
+    <string name="question_progress_format">Question %d of %d</string>
+    <string name="incorrect_answer_toast_quiz">Incorrect ✗</string>
+
+    <string name="quiz_results_title">Quiz Finished!</string>
+    <string name="quiz_results_score">Correct answers: %d out of %d</string>
+    <string name="quiz_results_percentage">Percentage: %d%%</string>
+    <string name="quiz_results_grade">Grade: %s</string>
+    <string name="quiz_results_message">%s</string>
+
+    <string-array name="quiz_grades">
+        <item>Excellent!</item>
+        <item>Good</item>
+        <item>Satisfactory</item>
+        <item>Pass</item>
+        <item>Needs Review</item>
+    </string-array>
+
+    <string-array name="quiz_encouragements">
+        <item>Excellent work! You have a great knowledge of trigonometry!</item>
+        <item>Good result! Keep studying.</item>
+        <item>Dont be discouraged! Review the theory and try again.</item>
+    </string-array>
+
+    <string name="quiz_fragment_title">Trigonometry Quiz</string>
+    <string name="select_difficulty_label">Select difficulty level:</string>
+    <string name="start_quiz_button">Start Quiz</string>
+    <string name="question_progress_placeholder">Question 1 of 10</string>
+    <string name="timer_placeholder">Time: 30</string>
+    <string name="quiz_question_placeholder">The question will be displayed here</string>
+    <string name="next_question_button">Next Question</string>
+    <string name="restart_quiz_button">Restart Quiz</string>
+
+    <!-- Quiz Questions and Answers -->
+    <!-- Easy -->
+    <string name="q_easy_1">What is sin(0°)?</string>
+    <string-array name="a_easy_1">
+        <item>0</item>
+        <item>1</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="q_easy_2">What is cos(0°)?</string>
+    <string-array name="a_easy_2">
+        <item>0</item>
+        <item>1</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="q_easy_3">What is sin(90°)?</string>
+    <string-array name="a_easy_3">
+        <item>0</item>
+        <item>-1</item>
+        <item>1</item>
+    </string-array>
+
+    <string name="q_easy_4">What is cos(90°)?</string>
+    <string-array name="a_easy_4">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="q_easy_5">The formula sin²(α) + cos²(α) is equal to:</string>
+    <string-array name="a_easy_5">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <!-- Medium -->
+    <string name="q_medium_1">What is sin(30°)?</string>
+    <string-array name="a_medium_1">
+        <item>0.5</item>
+        <item>√3/2</item>
+        <item>√2/2</item>
+    </string-array>
+
+    <string name="q_medium_2">What is tan(45°)?</string>
+    <string-array name="a_medium_2">
+        <item>0</item>
+        <item>1</item>
+        <item>Not defined</item>
+    </string-array>
+
+    <string name="q_medium_3">If sin(x) = 0.8, what is cos(x) if x is in the first quadrant?</string>
+    <string-array name="a_medium_3">
+        <item>0.6</item>
+        <item>-0.6</item>
+        <item>0.2</item>
+    </string-array>
+
+    <string name="q_medium_4">What is the period of the function y = cos(x)?</string>
+    <string-array name="a_medium_4">
+        <item>180°</item>
+        <item>360°</item>
+        <item>90°</item>
+    </string-array>
+
+    <string name="q_medium_5">arcsin(1) is equal to:</string>
+    <string-array name="a_medium_5">
+        <item>0°</item>
+        <item>45°</item>
+        <item>90°</item>
+    </string-array>
+
+    <!-- Hard -->
+    <string name="q_hard_1">What is tan(60°)?</string>
+    <string-array name="a_hard_1">
+        <item>√3</item>
+        <item>1</item>
+        <item>1/√3</item>
+    </string-array>
+
+    <string name="q_hard_2">Solve the equation: 2sin(x) - 1 = 0 for x in [0°, 90°].</string>
+    <string-array name="a_hard_2">
+        <item>30°</item>
+        <item>45°</item>
+        <item>60°</item>
+    </string-array>
+
+    <string name="q_hard_3">What is the value of sin(150°)?</string>
+    <string-array name="a_hard_3">
+        <item>-0.5</item>
+        <item>√3/2</item>
+        <item>0.5</item>
+    </string-array>
+
+    <string name="q_hard_4">Simplify the expression: (1 - cos²(x)) / sin(x)</string>
+    <string-array name="a_hard_4">
+        <item>sin(x)</item>
+        <item>cos(x)</item>
+        <item>tan(x)</item>
+    </string-array>
+
+    <string name="q_hard_5">What is the value of arccos(-√3/2)?</string>
+    <string-array name="a_hard_5">
+        <item>120°</item>
+        <item>30°</item>
+        <item>150°</item>
+    </string-array>
+
+</resources>

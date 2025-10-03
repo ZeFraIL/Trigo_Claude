@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#f5f5f5">
+
+    <!-- Right Navigation Panel -->
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#2c3e50"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/navigation_title"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <Button
+            android:id="@+id/btn_theory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_theory"
+            android:layout_marginBottom="8dp"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/btn_practice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_practice"
+            android:layout_marginBottom="8dp"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/btn_quiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_quiz"
+            android:layout_marginBottom="8dp"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/btn_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_progress"
+            android:layout_marginBottom="8dp"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/btn_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_settings"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+    <!-- Main Content Area -->
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#ffffff" />
+
+</LinearLayout>
